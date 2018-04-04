@@ -27,10 +27,9 @@
 		
 			#container {
 				background: #49c7f4;
-				width: 360px;
+				width: 370px;
 				height: 135px;
-				position: absolute;
-				right: 69px;	
+				transform: translateY(-139px);	
 				opacity: 0.35;
 				top: 50px;	
 				transition: 0.2s;
@@ -40,29 +39,30 @@
 				width: 360px;
 				height: 135px;
 				overflow: hidden;
+				cursor: pointer;
 			}
 
 			#paragraph {
 				color: #fff;	
-				transform: translateY(-60px) translateX(20px);
+				transform: translateY(-190px) translateX(20px);
 				transition: 0.4s;
 			}
 			
 			#first:hover #paragraph {
-				transform: translateY(-75px) translateX(20px);
+				transform: translateY(-210px) translateX(20px);
 			}
 
 			#paragraph2 {
 				color: #dbdbdb;
 				font-size: 7px;
-				transform: translateX(20px) translateY(-70px);
+				transform: translateX(20px) translateY(-200px);
 				opacity: 0;
-				transition: 0.1s;
+				transition: 0.3s;
 			}
 
 			#first:hover #paragraph2 {
 				opacity: 1;
-				transform: translateY(-88px) translateX(20px);
+				transform: translateY(-225px) translateX(20px);
 				transition: 0.55s;
 			}
 		</style>

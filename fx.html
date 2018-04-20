@@ -13,12 +13,12 @@
             }
 
            nav li a {
-                color: #fff;
+                color: #000000;
                 font-size: 30px;
                 width: 300px;
                 height: 300px;
                 border-radius: 100%;
-                background-color: #d16721;
+                background:#a5a5a5;
                 display: block;
                 position: absolute;
                 top: -150px;
@@ -30,11 +30,12 @@
                 list-style: none;
                 width: 300px;
                 height: 300px;
-                background-color: #1e5423;
                 position: absolute;
                 transform-origin: 0px 0px;
-                border: 2px solid #fff;
                 overflow: hidden;
+                top: 150px;
+                left: 150px;
+                text-shadow: 0 0 5px #386f89;
             }
 
             nav {
@@ -60,7 +61,7 @@
            }
 
            nav li:nth-child(5) {
-            transform:  rotate(180deg) skew(45deg);    
+            transform:  rotate(180deg) skew(45deg);
             }
 
            nav li:nth-child(6) {
@@ -75,22 +76,77 @@
             }
 
             nav li a:hover {
-                background-color: #6d3109;
+                background-image: radial-gradient(#20485b,#459ac1 70%);
+            }
+
+            nav a i {
+                position: absolute;
+                top: 180px;
+                left: 250px;
+            }
+
+            nav li:nth-child(4) i {
+                transform: rotate(200deg);
+            }
+
+            nav li:nth-child(5) i {
+                transform: rotate(180deg);
+            }
+
+            nav li:nth-child(7) i {
+                transform: rotate(90deg);
+            }
+
+            nav li:nth-child(8) i {
+                transform: rotate(45deg);
+            }
+
+            nav li:nth-child(3) i {
+                transform: rotate(-30deg);
+            }
+
+            nav ul {
+                width: 300px;
+                height: 300px;
+                border-radius: 100%;
+                overflow: hidden;
+                position: absolute;
+            }
+
+            nav ul::after {
+                content: "\f1eb";
+                position: absolute;
+                top: 70px;
+                left: 70px;
+                display: block;
+                width: 160px;
+                height: 160px;
+                border-radius: 100%;
+                background: #fff;
+                line-height: 160px;
+                text-align: center;
+                font-family: FontAwesome;
+                font-size: 60px;
+                box-shadow: 0 0 5px 3px #6f767a;
+            }
+
+            nav ul:target::after {
+                content: "\f028";
             }
         </style>
 </head>
 <body>
     <nav>
-        <ul>
+        <ul id="menu">
             <li><a href=""><i class="fa fa-volume-up" aria-hidden="true"></i></a></li>
             <li><a href=""><i class="fa fa-sun-o" aria-hidden="true"></i></a></li>
             <li><a href=""><i class="fa fa-phone" aria-hidden="true"></i></a></li>
             <li><a href=""><i class="fa fa-comment-o" aria-hidden="true"></i></a></li>
             <li><a href=""><i class="fa fa-wifi" aria-hidden="true"></i></a></li>
             <li><a href=""><i class="fa fa-plane" aria-hidden="true"></i></a></li>
-            <li><a href=""><i class="fa fa-bluetooth-b" aria-hidden="true"></i></a></li>
+            <li><a href="#menu"><i class="fa fa-bluetooth-b" aria-hidden="true"></i></a></li>
             <li><a href=""><i class="fa fa-map-marker" aria-hidden="true"></i></a></li>
         </ul>
-    </nav>      
+    </nav>
 </body>
 </html>

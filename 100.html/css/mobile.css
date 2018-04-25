@@ -1,0 +1,10 @@
+body {
+}
+
+nav div:last-child a {
+  display: none;
+}
+
+nav div:last-child a:first-child {
+  display: inline;
+}

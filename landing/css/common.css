@@ -1,0 +1,24 @@
+body{
+  margin: 0px;
+  font-family: 'Oswald', sans-serif;
+}
+nav a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+.bg-transparent{
+  background-color: rgba(0, 0, 0, 0.75);
+}
+nav .active{
+  color: yellow;
+}
+
+small{
+  color: yellow;
+  font-size: 16px;
+  font-weight: bold;
+}
+nav div:first-child a{
+  font-size: 26px;
+}

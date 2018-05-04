@@ -1,0 +1,86 @@
+body {
+	margin-left: 0px;
+	padding: 0px;
+}
+
+
+.Price {
+	width: 100%;
+	background: #ededed;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+}
+
+.Price>h1, .Price>h3 {
+  text-align: center;
+  position: relative;
+}
+
+.Price>h1 {
+	top: 50px;
+	font-size: 32px;
+}
+
+.Price>h3 {
+	top: -50px;
+	font-size: 25px;
+	color: #3d3d3d;
+}
+
+#basic, #standart, #advanced, #premium {
+	border: 1px solid #d1d1d1;
+	display: inline-block;
+	width: 15%;
+	margin-left: 0.5%;
+	text-align: center;
+	border-radius: 2%;
+	margin-top: 60px;
+	background: #fff;
+	padding-bottom: 30px;
+}
+
+#basic {
+	margin-left: 20%;
+}
+
+.status {
+	font-size: 22px;
+}
+
+small {
+	position: relative;
+	top: -25px;
+	font-size: 36px;
+}
+
+#costs {
+	font-size: 72px;
+}
+p {
+	font-size: 18px;
+}
+
+.select-plan {
+	display: block;
+	background: #edaf21;
+	width: 120px;
+	padding: 12px;
+	font-size: 14px;
+	position: relative;
+	left: 70px;
+	border-radius: 6%;
+}
+#advanced {
+	background: #edaf21;
+}
+
+#advanced .select-plan {
+	background: #2b2a2a;
+}
+
+#advanced a {
+	color: #fff;
+}
